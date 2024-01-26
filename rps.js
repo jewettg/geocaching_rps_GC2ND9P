@@ -90,8 +90,10 @@ function showWinner(winner, computerChoice) {
     <p>Computer: ${scoreboard.computer}</p>
     `;
 
-  if (scoreboard.player > 9) {
+  if (scoreboard.player > 0) {
     finalcoord.style.display = "block";
+  } else {
+    finalcoord.style.display = "none";
   }
 
   modal.style.display = 'block';
@@ -105,6 +107,7 @@ function restartGame() {
     <p>Player: 0</p>
     <p>Computer: 0</p>
   `;
+  finalcoord.style.display = "none";
 }
 
 // Clear modal
