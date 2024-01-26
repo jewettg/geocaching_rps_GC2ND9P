@@ -1,3 +1,26 @@
+//
+//  Javascript:  Rock, Paper, Scissors Game
+//  
+//  Original Code from:
+//   https://codepen.io/bradtraversy/pen/wLgPzr
+//  
+//  Code adopted for standalone by:
+//    Greg Jewett, http://geocaching.ejewett.com/
+// 
+//  This script allows a user to interact with three symbols (rock, paper, scissors)
+//  displayed on the screen as their choice in the standard Rock, Paper, Scissors 
+//  Game (RPS) battle.
+// 
+//  ---------------------------------------------------------------------------------------
+//  CHANGE LOG
+//  2024-01-26 (GSJ) Initial version
+//                   Adapted original code to display final coordinates on 10 wins.
+//  ---------------------------------------------------------------------------------------
+// 
+//  =======================================================================================
+//  BEGIN Script
+//  =======================================================================================
+
 const choices = document.querySelectorAll('.choice');
 const score = document.getElementById('score');
 const result = document.getElementById('result');
@@ -90,7 +113,7 @@ function showWinner(winner, computerChoice) {
     <p>Computer: ${scoreboard.computer}</p>
     `;
 
-  if (scoreboard.player > 0) {
+  if (scoreboard.player > 9) {
     finalcoord.style.display = "block";
   } else {
     finalcoord.style.display = "none";
@@ -121,3 +144,6 @@ function clearModal(e) {
 choices.forEach(choice => choice.addEventListener('click', play));
 window.addEventListener('click', clearModal);
 restart.addEventListener('click', restartGame);
+//  =======================================================================================
+//  END Script
+//  =======================================================================================

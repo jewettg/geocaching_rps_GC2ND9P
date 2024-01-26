@@ -1,3 +1,17 @@
+/* 
+  Rock, Paper, Scissors Game
+
+  Original Code from:
+   https://codepen.io/bradtraversy/pen/wLgPzr
+  
+  Code adopted for standalone by:
+    Greg Jewett, http://geocaching.ejewett.com/
+ 
+  Acknowledgements:
+    Original code:    https://codepen.io/bradtraversy/pen/wLgPzr
+    Hand Graphics:  Font Awesome (https://fontawesome.com/)
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 :root {
