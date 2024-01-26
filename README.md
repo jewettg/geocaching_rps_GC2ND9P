@@ -3,7 +3,7 @@
 This the code behind the Rock, Paper, Scissors (RPS) battle game for the Geocaching puzzle (GC2ND9P).
 
 ## Javascript: Rock, Paper, Scissors Game
-This script allows a user to interact with three symbols (rock, paper, scissors) displayed on the screen as their choice in the standard Rock, Paper, Scissors (RPS) battle game.
+This script allows a user to interact with three symbols (rock, paper, scissors) displayed on the screen as their choice in the standard Rock, Paper, Scissors (RPS) battle game.  A score for player and computer appear above the hand symbols.  In this adapted version, one the player's score reaches 10 or higher, a "Congratulations" section appears displaying the final coordinates for a Geocache starting location.
 
 **Original Code from:**
 &nbsp;&nbsp;&nbsp;&nbsp;https://codepen.io/bradtraversy/pen/wLgPzr
