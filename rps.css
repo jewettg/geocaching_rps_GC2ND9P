@@ -173,3 +173,8 @@ body {
   font-size: 18px;
   text-align: center;
 }
+
+.coordinates {
+  font-size: 14px;
+  font-family: "Lucida Console", "Menlo", "Monaco", "Courier", monospace;
+}

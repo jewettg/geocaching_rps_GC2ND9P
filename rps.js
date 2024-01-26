@@ -15,6 +15,8 @@
 //  CHANGE LOG
 //  2024-01-26 (GSJ) Initial version
 //                   Adapted original code to display final coordinates on 10 wins.
+//  2024-01-26 (GSJ) Added a "losing" scenario, where if the computer reaches 10 wins,
+//                   the game is over, and the match must restart.
 //  ---------------------------------------------------------------------------------------
 // 
 //  =======================================================================================
@@ -119,6 +121,10 @@ function showWinner(winner, computerChoice) {
     finalcoord.style.display = "none";
   }
 
+  if (scoreboard.computer > 9) {
+    window.location.replace("lose.html");
+  }
+  
   modal.style.display = 'block';
 }
 
