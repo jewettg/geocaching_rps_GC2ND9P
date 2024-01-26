@@ -168,3 +168,8 @@ body {
 .centered-content {
   text-align: center;
 }
+
+.rps-text {
+  font-size: 18px;
+  text-align: center;
+}
