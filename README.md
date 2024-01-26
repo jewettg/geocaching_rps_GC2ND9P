@@ -13,7 +13,7 @@ This script allows a user to interact with three symbols (rock, paper, scissors)
 > Greg Jewett, http://geocaching.ejewett.com/
 
 **Acknowledgements:**
-> Original code: https://codepen.io/bradtraversy/pen/wLgPzr
+> Original code: https://codepen.io/bradtraversy/pen/wLgPzr<br>
 > Hand Graphics: Font Awesome (https://fontawesome.com/)
 
 **Requirements:**
