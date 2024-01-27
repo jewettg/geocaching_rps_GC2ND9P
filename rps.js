@@ -33,6 +33,8 @@ const scoreboard = {
   player: 0,
   computer: 0
 };
+window.sessionStorage.clear();
+window.sessionStorage.setItem("cheatCheck", false)
 
 // Play game
 function play(e) {
@@ -116,9 +118,8 @@ function showWinner(winner, computerChoice) {
     `;
 
   if (scoreboard.player > 9) {
-    finalcoord.style.display = "block";
-  } else {
-    finalcoord.style.display = "none";
+    window.sessionStorage.setItem("cheatCheck", true)
+    window.location.replace("win.html");
   }
 
   if (scoreboard.computer > 9) {

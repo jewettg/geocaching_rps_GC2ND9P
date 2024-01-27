@@ -1,6 +1,6 @@
 <!--  
 
-  Rock, Paper, Scissors Game
+  Rock, Paper, Scissors Game - WIN
 
   Original Code from:
    https://codepen.io/bradtraversy/pen/wLgPzr
@@ -31,36 +31,26 @@
   </head>
 
   <body>
+    <script>
+        let cheatCheck = sessionStorage.getItem("cheatCheck");
+        window.sessionStorage.clear();
+        if (!cheatCheck) {
+            window.location.replace("rps.html");
+        }
+    </script>
+
     <div  class="centered-content">
       <img src="images/rps.png" height="250"><br/>
       Play Rock, Paper, Scissors versus the computer. <br/>
-      Be the first to win TEN times, and you will be given the Stage 1 coordinates for this multicache!
       <hr style="width: 500px; margin: auto;">
-      Click the hand symbols to choose your "weapon" and the battle results will appear.<br>
     </div>
 
-    <div class="container">
-      <header class="header">
-        <button id="restart" class="restart-btn">Restart Game</button>
-        <div id="score" class="score">
-          <p>Player: 0</p>
-          <p>Computer: 0</p>
-        </div>
-      </header>
-      <h2>Make Your Selection</h2>
-      <div class="choices">
-        <i id="rock" class="choice fas fa-hand-rock fa-10x"></i>
-        <i id="paper" class="choice fas fa-hand-paper fa-10x"></i>
-        <i id="scissors" class="choice fas fa-hand-scissors fa-10x"></i>
-      </div>
+    <!-- Final Coordinates -->
+    <div class="centered-content">
+    <img src="images/congratulations.gif" alt="Congratulations!"><br>
+        <b>You beat the computer 10 times!  <br/> The coordinates for Stage 1 is your reward!<br><br/></b>
+        <div class="coordinates">N 30° 24.042<br/>W 097° 45.272</div>
     </div>
-
-    <!-- Modal -->
-    <div class="modal">
-      <div id="result" class="modal-content"></div>
-    </div>
-
-    <script src="rps.js"></script>
   </body>
 
 </html>
